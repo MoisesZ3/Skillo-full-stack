@@ -82,41 +82,42 @@
 
 // Desafio 3
 // 1
-// alert("Clique no botão OK 10 vezes e receba uma surpresa!");
-// let contador = 1
-// console.log (contador)
-// while (contador <= 10) {
-//       alert("Você ja clicou " + contador + " vezes.")
-//     if (contador == 10) {
-//        alert ("Parabens você perdeu mais ou menos 10 segundos da sua vida.")
-//     }
-//     contador++
-// }
+alert("Clique no botão OK 10 vezes e receba uma surpresa!");
+let contador = 1;
+console.log (contador);
+while (contador <= 10) {
+      alert("Você ja clicou " + contador + " vezes.");
+    if (contador == 10) {
+       alert ("Parabens você perdeu mais ou menos 10 segundos da sua vida.");
+    }
+    contador++;
+}
 
 //2
 // alert("Receita federal esta a 10km de você");
-// let contador = 10
+// let contador = 10;
 // while (contador >= 0) {
-//        alert(contador + "km")
+//        alert(contador + "km");
 //     if (contador == 0) {
-//       alert ("Você não pagou os impostos e tomaram sua casa.")
+//       alert ("Você não pagou os impostos e tomaram sua casa.");
 //     }
-//     contador--
+//     contador--;
 // }
 
 //3
-// let contador = prompt ("escolha um número")
-// console.log (contador)
+// let contador = prompt ("escolha um número");
+// console.log (contador);
 // while (contador > 0) {
-//     contador--
-//     console.log (contador)
+//     contador--;
+//     console.log (contador);
 // }
 
 // 4
-// let numero = prompt ("escolha um número")
-// let contador = 0
-// console.log (contador)
+// let numero = prompt ("escolha um número");
+// let contador = 0;
+// console.log (contador);
 // while (contador < numero) {
-//     contador++
-//     console.log (contador)
+//     contador++;
+//     console.log (contador);
 // }
+
