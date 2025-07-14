@@ -82,16 +82,16 @@
 
 // Desafio 3
 // 1
-alert("Clique no botão OK 10 vezes e receba uma surpresa!");
-let contador = 1;
-console.log (contador);
-while (contador <= 10) {
-      alert("Você ja clicou " + contador + " vezes.");
-    if (contador == 10) {
-       alert ("Parabens você perdeu mais ou menos 10 segundos da sua vida.");
-    }
-    contador++;
-}
+// alert("Clique no botão OK 10 vezes e receba uma surpresa!");
+// let contador = 1;
+// console.log (contador);
+// while (contador <= 10) {
+//       alert("Você ja clicou " + contador + " vezes.");
+//     if (contador == 10) {
+//        alert ("Parabens você perdeu mais ou menos 10 segundos da sua vida.");
+//     }
+//     contador++;
+// }
 
 //2
 // alert("Receita federal esta a 10km de você");
@@ -106,18 +106,16 @@ while (contador <= 10) {
 
 //3
 // let contador = prompt ("escolha um número");
-// console.log (contador);
-// while (contador > 0) {
-//     contador--;
-//     console.log (contador);
+// while (contador >= 0) {
+//    console.log (contador);
+//    contador--;
 // }
 
-// 4
+//4
 // let numero = prompt ("escolha um número");
 // let contador = 0;
-// console.log (contador);
-// while (contador < numero) {
-//     contador++;
-//     console.log (contador);
+// while (contador <= numero) {
+//    console.log (contador);
+//    contador++;
 // }
 
