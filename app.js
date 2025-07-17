@@ -1,27 +1,27 @@
-alert('Boas vindas ao jogo do número secreto');
-let numeroSecreto = parseInt (Math.random() * 100 + 1);
-console.log(numeroSecreto);
-let chute;
-let tentativas = 1;
-// enquanto chute não for igual ao n.s.
-while (chute != numeroSecreto) {
-   chute = prompt('Escolha um número entre 1 e 100');
-   // se chute for igual ao número secreto
-   if (chute == numeroSecreto) { 
-        break;
-   } else {
-       if (chute > numeroSecreto) {
-           alert(`O número secreto é menor que ${chute}`);
-        } else {
-           alert(`0 número secreto é maior que ${chute}`);
-        }  
-        // tentativa = tentativas + 1 
-        tentativas++;  
-    }
-}
+// alert('Boas vindas ao jogo do número secreto');
+// let numeroSecreto = parseInt (Math.random() * 100 + 1);
+// console.log(numeroSecreto);
+// let chute;
+// let tentativas = 1;
+// // enquanto chute não for igual ao n.s.
+// while (chute != numeroSecreto) {
+//    chute = prompt('Escolha um número entre 1 e 100');
+//    // se chute for igual ao número secreto
+//    if (chute == numeroSecreto) { 
+//         break;
+//    } else {
+//        if (chute > numeroSecreto) {
+//            alert(`O número secreto é menor que ${chute}`);
+//         } else {
+//            alert(`0 número secreto é maior que ${chute}`);
+//         }  
+//         // tentativa = tentativas + 1 
+//         tentativas++;  
+//     }
+// }
 
-let palavraTentativas = tentativas > 1 ? "tentativas" : "tentativa";
-alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} em ${tentativas} ${palavraTentativas}`);
+// let palavraTentativas = tentativas > 1 ? "tentativas" : "tentativa";
+// alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} em ${tentativas} ${palavraTentativas}`);
 
 // if (tentativas > 1) {
 //     alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} em ${tentativas} tentativas`);
@@ -32,22 +32,30 @@ alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} em ${tentativ
 // DESAFIO 1
 // 1
 // alert ("Boas vindas ao nosso site");
+
 // 2
 // let nome = "Lua";
+
 // 3
 // let idade = 25;
+
 // 4
 // let saldoDeVendas = 50;
+
 // 5
 // let saldoDisponivel = 1000;
+
 // 6
 // alert ("Erro! Preencha todos os campos");
+
 // 7
 // let mensagemDeErro = "Erro! Preencha todos os campos";
+
 // 8
 // let nome = prompt ("Qual o seu nome");
 // console.log (nome)
 // alert (`Ola ${nome}!`);
+
 // 9-10
 // let idade = prompt ("Qual sua idade");
 // console.log (idade)
@@ -59,32 +67,42 @@ alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} em ${tentativ
 
 // DESAFIO 2
 // 1
-// let diaDaSemana = prompt ("Você pode me dizer que dia da semana é hoje");
+let diaDaSemana = prompt ("Você pode me dizer que dia da semana é hoje");
+let resultado = diaDaSemana == "sabado"|| diaDaSemana == "domingo" ? "Bom fim de semana" : "Boa semana";
+alert (resultado);
 // if (diaDaSemana == "sabado"|| diaDaSemana == "domingo") {
 //     alert ("Bom fim de semana");
 // } else {
 //     alert ("Boa semana");
 // }
+
 // 2
 // let numero = prompt ("Escolha qualquer número");
-// if (numero > -1) {
-//     alert ("O número " + numero + " é positivo");
-// } else {
-//     alert ("O número " + numero + " é negativo");
-// }
+// let resultado = numero > -1 ? " é positivo" : " é negativo";
+// alert ("O número " + numero + " é " + resultado);
+// // if (numero > -1) {
+// //     alert ("O número " + numero + " é positivo");
+// // } else {
+// //     alert ("O número " + numero + " é negativo");
+// // }
+
 // 3
 // let pontuação = prompt ("Qual foi sua pontuação");
+// let resultado = pontuação >= 100 ? "Parabéns, você venceu!" : "Tente novamente para ganhar.";
+// alert (resultado);
 // if (pontuação >= 100) {
 //     alert ("Parabéns, você venceu!");
 // } else {
 //     alert ("Tente novamente para ganhar.");
 // }
+
 // 4
 // let saldoUsuario = 51000
 // let desejo = prompt ("O que você quer consultar");
 // if (desejo = "saldo") {
 //     alert ("seu saldo é " + saldoUsuario);
 // }
+
 // 5
 // let nome = prompt ("Qual o seu nome");
 // alert ("Ola seja bem vindo" + nome );
@@ -158,11 +176,13 @@ alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} em ${tentativ
 
 // 7
 // let idade = prompt ("Qual é sua idade?");
-// if (idade >= 18) {
-//     console.log ("Você é maior de idade.");
-// } else {
-//     console.log ("Você é menor de idade.");
-// }
+// let resultado = idade >= 18 ? "Você é maior de idade." : "Você é menor de idade.";
+// console.log (resultado);
+// // if (idade >= 18) {
+// //     console.log ("Você é maior de idade.");
+// // } else {
+// //     console.log ("Você é menor de idade.");
+// // }
 
 // 8
 // let numero = prompt ("Escolha um número");
@@ -185,11 +205,13 @@ alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} em ${tentativ
 
 // 10
 // let nota = prompt ("Qual foi sua nota?");
-// if (nota >= 7) {
-//     console.log ("Aprovado.");
-// } else {
-//     console.log ("Reprovado.");
-// }
+// let resultado = nota >= 7 ? "Aprovado." : "Reprovado.";
+// console.log (resultado);
+// // if (nota >= 7) {
+// //     console.log ("Aprovado.");
+// // } else {
+// //     console.log ("Reprovado.");
+// // }
 
 // 11
 // let numero = Math.random();
@@ -201,4 +223,4 @@ alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} em ${tentativ
 
 // 13
 // let numero = parseInt (Math.random() * 1000 + 1);
-// console.log (numero);
+// console.log (numero);+
