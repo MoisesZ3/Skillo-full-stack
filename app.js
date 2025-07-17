@@ -67,14 +67,14 @@
 
 // DESAFIO 2
 // 1
-let diaDaSemana = prompt ("Você pode me dizer que dia da semana é hoje");
-let resultado = diaDaSemana == "sabado"|| diaDaSemana == "domingo" ? "Bom fim de semana" : "Boa semana";
-alert (resultado);
-// if (diaDaSemana == "sabado"|| diaDaSemana == "domingo") {
-//     alert ("Bom fim de semana");
-// } else {
-//     alert ("Boa semana");
-// }
+// let diaDaSemana = prompt ("Você pode me dizer que dia da semana é hoje");
+// let resultado = diaDaSemana == "sabado"|| diaDaSemana == "domingo" ? "Bom fim de semana" : "Boa semana";
+// alert (resultado);
+// // if (diaDaSemana == "sabado"|| diaDaSemana == "domingo") {
+// //     alert ("Bom fim de semana");
+// // } else {
+// //     alert ("Boa semana");
+// // }
 
 // 2
 // let numero = prompt ("Escolha qualquer número");
@@ -223,4 +223,6 @@ alert (resultado);
 
 // 13
 // let numero = parseInt (Math.random() * 1000 + 1);
-// console.log (numero);+
+// console.log (numero);
+
+// DESAFIO 5
