@@ -20,10 +20,12 @@ public class Produto {
 
     public void fichaProduto() {
         System.out.println(getNome());
-        System.out.println(getPreco());
+        System.out.println("Preco do produto: " + getPreco());
     }
 
-    void aplicarDesconto(double percentual) {
-
+    public void aplicarDesconto(double percentual) {
+        double desconto =(preco * (percentual / 100));
+        double precoComDesconto = preco - desconto;
+        System.out.println("Preco com desconto: " + precoComDesconto);
     }
 }
