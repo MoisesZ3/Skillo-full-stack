@@ -1,3 +1,5 @@
+import br.com.alura.desafio3.veiculos.ModeloCarro;
+
 public class MainCarro {
     public static void main(String[] args) {
         ModeloCarro meuCarro = new ModeloCarro();
@@ -9,7 +11,6 @@ public class MainCarro {
         meuCarro.setPrecoTerceiroAno(159.900);
 
         meuCarro.exibirFichaCarro();
-        meuCarro.exibirMenorPreco();
-        meuCarro.exibirMaiorPreco();
+        meuCarro.menorMaior();
     }
 }
