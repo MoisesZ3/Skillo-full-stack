@@ -1,6 +1,23 @@
 public class ContaBancaria {
+    private String nomeUsuario;
+    private int numeroDaConta;
     private double saldo;
 
+    public String getNomeUsuario() {
+        return nomeUsuario;
+    }
+
+    public void setNomeUsuario(String nomeUsuario) {
+        this.nomeUsuario = nomeUsuario;
+    }
+
+    public int getNumeroDaConta() {
+        return numeroDaConta;
+    }
+
+    public void setNumeroDaConta(int numeroDaConta) {
+        this.numeroDaConta = numeroDaConta;
+    }
 
     public double getSaldo() {
         return saldo;

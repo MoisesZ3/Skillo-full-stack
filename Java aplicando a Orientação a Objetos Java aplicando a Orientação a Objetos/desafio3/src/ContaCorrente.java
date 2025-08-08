@@ -10,5 +10,4 @@ public class ContaCorrente extends ContaBancaria {
     }
 
     public double cobrarTarifa () {
-  
 }
