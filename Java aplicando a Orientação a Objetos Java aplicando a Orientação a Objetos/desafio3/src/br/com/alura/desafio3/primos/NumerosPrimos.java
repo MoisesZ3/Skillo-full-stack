@@ -12,17 +12,21 @@ public class NumerosPrimos {
     }
 
     public void verificarPrimalidade() {
-        int verificaNumero = numero;
-        while (verificaNumero > 1) {
-            verificaNumero--;
-            if (numero / verificaNumero != 1) {
-                System.out.println("É um numero primo");
+        double verificarNumero = numero;
+        while (verificarNumero > 0) {
+            verificarNumero--;
+            double calculo = numero % verificarNumero;
+            if (verificarNumero == 1) {
+                System.out.println(numero + " é um numero primo.");
                 break;
             } else {
-                System.out.println("Não é um numero primo");
-                break;
+                if (calculo == 0 || numero == 1) {
+                    System.out.println(numero + " não é um numero primo.");
+                    break;
+                }
             }
         }
     }
-
 }
+
+
