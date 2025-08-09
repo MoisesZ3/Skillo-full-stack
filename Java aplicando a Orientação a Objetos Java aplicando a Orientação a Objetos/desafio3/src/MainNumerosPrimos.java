@@ -2,11 +2,9 @@ import br.com.alura.desafio3.primos.NumerosPrimos;
 
 public class MainNumerosPrimos {
     public static void main(String[] args) {
-        NumerosPrimos numeroPrimo = new NumerosPrimos();
-        numeroPrimo.setNumero();
+        NumerosPrimos testarNumero = new NumerosPrimos();
+        testarNumero.setNumero(29);
 
-        numeroPrimo.verificarPrimalidade();
-
-
+        testarNumero.verificarPrimalidade();
     }
 }
