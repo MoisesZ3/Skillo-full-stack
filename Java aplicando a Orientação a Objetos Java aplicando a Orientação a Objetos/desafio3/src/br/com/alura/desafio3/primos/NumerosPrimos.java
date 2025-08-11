@@ -19,11 +19,9 @@ public class NumerosPrimos {
             if (verificarNumero == 1) {
                 System.out.println(numero + " é um numero primo.");
                 break;
-            } else {
-                if (calculo == 0 || numero == 1) {
+            } if (calculo == 0 || numero == 1) {
                     System.out.println(numero + " não é um numero primo.");
                     break;
-                }
             }
         }
     }

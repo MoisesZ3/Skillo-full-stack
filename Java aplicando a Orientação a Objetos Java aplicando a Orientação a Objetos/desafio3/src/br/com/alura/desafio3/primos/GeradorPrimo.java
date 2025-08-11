@@ -10,17 +10,16 @@ public class GeradorPrimo extends NumerosPrimos {
     }
 
     public void gerarProximoPrimo() {
-        int numerogerado = gerarNumeroPrimo(1, 100);
-        double verificarNumero = numerogerado;
+        int numeroGerado = gerarNumeroPrimo(1, 1000);
+        double verificarNumero = numeroGerado;
         while (verificarNumero > 0) {
             verificarNumero--;
-            double calculo = numerogerado % verificarNumero;
+            double calculo = numeroGerado % verificarNumero;
             if (verificarNumero == 1) {
-                System.out.println(numerogerado);
+                System.out.println(numeroGerado);
                 break;
-            } else {
-                if (calculo == 0 || numerogerado == 1) {
-                }
+            } if (calculo == 0 || numeroGerado == 1) {
+                numeroGerado = gerarNumeroPrimo(1, 1000);
             }
         }
     }
