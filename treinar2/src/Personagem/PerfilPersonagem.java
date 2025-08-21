@@ -8,6 +8,7 @@ public class PerfilPersonagem {
     private String classe;
     private int vida;
     private int dano;
+    private Object inimigo;
 
     public String getNome() {
         return nome;
@@ -49,19 +50,12 @@ public class PerfilPersonagem {
         this.dano = dano;
     }
 
-    public int gerarNumeroPrimo(int minimo, int maximo) {
-        Random numeroAleatorio = new Random();
-        return numeroAleatorio.nextInt(maximo - minimo + 1) + minimo;
-    }
-
     public void exibirFicha() {
         System.out.println("Nome:" + nome);
         System.out.println("Arma: " + arma);
         System.out.println("Classe: " + classe);
         System.out.println("Vida:" + vida + "\n");
     }
-
-
 
     public void ataqueInimigo(PerfilPersonagem inimigo) {
         System.out.printf("%s ataca: \n", getClasse());
