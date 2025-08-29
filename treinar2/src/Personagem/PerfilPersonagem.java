@@ -8,7 +8,6 @@ public class PerfilPersonagem {
     private String classe;
     private int vida;
     private int dano;
-    private Object inimigo;
 
     public String getNome() {
         return nome;
@@ -58,8 +57,19 @@ public class PerfilPersonagem {
     }
 
     public void ataqueInimigo(PerfilPersonagem inimigo) {
+
         System.out.printf("%s ataca: \n", getClasse());
-        inimigo.setVida(inimigo.getVida() - getDano() );
-        System.out.printf("Vida atual do %s: %s \n", inimigo.getClasse(), inimigo.getVida());
+        inimigo.setVida(inimigo.getVida() - getDano());
+        if(inimigo.getVida() <= 0) {
+            inimigo.setVida(0);
+        }
+        System.out.printf("Vida atual do %s: %s \n\n", inimigo.getClasse(), inimigo.getVida());
+
+        System.out.printf("%s ataca: \n", inimigo.getClasse());
+        setVida(getVida() - inimigo.getDano() );
+        if(getVida() < 0) {
+            setVida(0);
+        }
+        System.out.printf("Vida atual do %s: %s \n\n", getClasse(), getVida());
     }
 }

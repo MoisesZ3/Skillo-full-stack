@@ -8,6 +8,6 @@ public class Mago extends PerfilPersonagem{
         this.setArma("Cajado");
         this.setClasse("Mago");
         this.setVida(50);
-        this.setDano(10);
+        this.setDano(20);
     }
 }

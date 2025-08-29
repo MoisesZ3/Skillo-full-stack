@@ -8,6 +8,6 @@ public class Ladino extends PerfilPersonagem{
         this.setArma("Adaga");
         this.setClasse("Ladino");
         this.setVida(50);
-        this.setDano(10);
+        this.setDano(20);
     }
 }

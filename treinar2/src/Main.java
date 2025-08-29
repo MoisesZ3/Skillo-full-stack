@@ -11,79 +11,47 @@ public class Main {
         Ladino ladino = new Ladino();
         Mago mago = new Mago();
         Barbaro barbaro = new Barbaro();
-        System.out.println("Escolha um personagem:\n1: Arqueiro\n2: Barbaro\n3: Ladino\n4: Mago");
+        System.out.println("Escolha um personagem:\n1: Arqueiro\n2: Ladino\n3: Mago\n4: Barbaro");
 
         int escolherPersonagem = leitura.nextInt();
-        int escolherInimigo = numeroAleatorio.nextInt(1,4 + 1);
         int acao;
+        int escolherInimigo = numeroAleatorio.nextInt(1,4 + 1);
         PerfilPersonagem inimigo = null;
-        switch (escolherInimigo) {
-            case 1:
-                inimigo = arqueiro;
-            case 2:
-                inimigo = ladino;
-            case 3:
-                inimigo = mago;
-            case 4:
-                inimigo = barbaro;
+        PerfilPersonagem personagem = null;
+
+        if(escolherPersonagem == escolherInimigo) {
+            escolherInimigo = numeroAleatorio.nextInt(1,4 + 1);
         }
+
+        switch (escolherInimigo) {
+            case 1 -> inimigo = arqueiro;
+            case 2 -> inimigo = ladino;
+            case 3 -> inimigo = mago;
+            case 4 -> inimigo = barbaro;
+        }
+
         switch (escolherPersonagem) {
-            case 1:
-                System.out.println("Você escolheu o Arqueiro");
-                System.out.println("Escolha um personagem:\n1: Atacar\n2: ######\n3: ######\n4: ######");
-                acao = leitura.nextInt();
-                switch (acao) {
-                    case 1:
-                        arqueiro.ataqueInimigo(inimigo);
-                    case 2:
+            case 1 -> personagem = arqueiro;
+            case 2 -> personagem = ladino;
+            case 3 -> personagem = mago;
+            case 4 -> personagem = barbaro;
+        }
 
-                    case 3:
+        System.out.println("Seu personagem é " + personagem.getClasse() + "\n");
+        System.out.println("Seu inimigo é " + inimigo.getClasse() + "\n");
 
-                    case 4:
+        do {
+            System.out.println("Precione 1 para rolar os ataques");
+            acao = leitura.nextInt();
+            switch (acao) {
+                case 1 -> personagem.ataqueInimigo(inimigo);
+            }
+        } while(personagem.getVida() != 0 && inimigo.getVida() != 0);
 
-                }
-            case 2:
-                System.out.println("Você escolheu o Barbaro");
-                System.out.println("Escolha um personagem:\n1: Atacar\n2: ######\n3: ######\n4: ######");
-                acao = leitura.nextInt();
-                switch (acao) {
-                    case 1:
-                        barbaro.ataqueInimigo(inimigo);
-                    case 2:
-
-                    case 3:
-
-                    case 4:
-
-                }
-            case 3:
-                System.out.println("Você escolheu o Ladino");
-                System.out.println("Escolha um personagem:\n1: Atacar\n2: ######\n3: ######\n4: ######");
-                acao = leitura.nextInt();
-                switch (acao) {
-                    case 1:
-                        ladino.ataqueInimigo(inimigo);
-                    case 2:
-
-                    case 3:
-
-                    case 4:
-
-                }
-            case 4:
-                System.out.println("Você escolheu o Mago");
-                System.out.println("Escolha um personagem:\n1: Atacar\n2: ######\n3: ######\n4: ######");
-                acao = leitura.nextInt();
-                switch (acao) {
-                    case 1:
-                        mago.ataqueInimigo(inimigo);
-                    case 2:
-
-                    case 3:
-
-                    case 4:
-
-                }
+        if (personagem.getVida() == 0) {
+            System.out.println("Você foi derrotado!");
+        }else if (inimigo.getVida() == 0) {
+            System.out.println("Você venceu seu oponente!");
         }
     }
 }
