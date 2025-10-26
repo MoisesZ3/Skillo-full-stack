@@ -8,8 +8,10 @@ public class Contador {
         Scanner leitura = new Scanner(System.in);
         System.out.println("Escolha um número e vamo contar até ele!");
         int numeroEscolhido = leitura.nextInt();
-        for(int i = 1; i <= numeroEscolhido; i++) {
-            System.out.println(i);
+        int numero = 0;
+        while(numero != numeroEscolhido) {
+            numero++;
+            System.out.println(numero);
         }
     }
 }

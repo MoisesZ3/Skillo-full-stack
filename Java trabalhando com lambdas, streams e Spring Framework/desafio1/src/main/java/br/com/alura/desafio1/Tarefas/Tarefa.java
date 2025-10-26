@@ -5,9 +5,6 @@ public class Tarefa {
     private boolean concluida;
     private String pessoaResponsavel;
 
-    public Tarefa(){
-    }
-
     public Tarefa(String descricao, boolean concluida, String pessoaResponsavel) {
         this.descricao = descricao;
         this.concluida = concluida;
@@ -29,7 +26,7 @@ public class Tarefa {
     @Override
     public String toString() {
         return "descricao= " + descricao +
-                "\nconcluida= " + concluida +
-                "\npessoaResponsavel= " + pessoaResponsavel;
+                " - concluida= " + concluida +
+                " - pessoaResponsavel= " + pessoaResponsavel;
     }
 }

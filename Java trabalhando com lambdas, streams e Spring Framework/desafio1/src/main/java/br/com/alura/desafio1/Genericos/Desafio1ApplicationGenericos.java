@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -20,6 +21,11 @@ public class Desafio1ApplicationGenericos implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Scanner leitura = new Scanner(System.in);
+        Assinatura streaming = new Assinatura("Netflix", 20.0, LocalDate.of(2025, 7, 10));
+
+        double nota = leitura.nextDouble();
+        String comentario = leitura.nextLine();
+        Avaliacao<Assinatura> Avaliacao = new Avaliacao<Assinatura>(streaming, nota, comentario );
 
     }
 }
